@@ -6,7 +6,8 @@ import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.converter.moshi.MoshiConverterFactory
 
 object RetrofitClient {
-    private const val BASE_URL = "http://10.0.2.2/eff/"
+    //private const val BASE_URL = "http://10.0.2.2/eff/"
+    private const val BASE_URL = "https://raw.githubusercontent.com/oughzal/EFF2O23_Exercice1/main/"
         val instance: StationService by lazy {
         val retrofit = Retrofit.Builder()
             .baseUrl(BASE_URL)
